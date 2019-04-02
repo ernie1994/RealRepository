@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <div class="container">
+        <div class="row" id="day_names">
+
+        </div>
+
+        <div class="row" id="days">
+
+        </div>
+    </div>
+
+
+
+    <script>
+        var dayNames = ["S", "M", "T", "W", "Th", "F"];
+        dayNames.forEach((name) => {
+            var dayDiv = $("<div>");
+            dayDiv.attr("class", "col col-1");
+            dayDiv.text(name);
+            dayDiv.appendTo($("#day_names"));
+        });
+
+        for (var i = 0; i < 31; i++) {
+
+        }
+    </script>
+</body>
+
+</html>
